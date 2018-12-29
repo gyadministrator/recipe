@@ -1,0 +1,10 @@
+<scroll-view>
+  <view class='item'>
+    <text>{{data.sumary}}</text>
+    <view wx:for="{{list}}" wx:for-index="index" wx:for-item="recipe" wx:key="key">
+      <image src='{{recipe.img}}'></image>
+      <text>{{recipe.step}}</text>
+    </view>
+  </view>
+  <view class='empty' hidden='{{hidden}}'>暂无数据</view>
+</scroll-view>

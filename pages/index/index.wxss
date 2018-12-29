@@ -1,0 +1,84 @@
+.item {
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+
+.item image {
+  width: 90%;
+  height: 150px;
+  margin: 10px;
+}
+
+.empty {
+  width: 100%;
+  height: 600rpx;
+  text-align: center;
+  line-height: 600rpx;
+}
+
+.loading {
+  padding: 10rpx;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.loading:before {
+  display: inline-block;
+  margin-right: 5rpx;
+  vertical-align: middle;
+  content: '';
+  width: 40rpx;
+  height: 40rpx;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADdElEQVRoQ+2ZWahOURTHf5cQ8mDKkAhJSR4kczKUKZIhUh5M5QkZSnkw5IFSJN7MKQ+mzEOUIckQIsqsEEl4kSFjf+1Pp+0Me393n+/eW2fV9/Lttdda/7X2GvY+VdRxqqrj9lMAqOkIFhFIiEBDYDHQH/gB3ALWA99DRyyPCDQDLgC9LWNvAyOAjyFB5AFgA7Aowch9wLTaDuAz0DjByG9AU+BnKBChI9ABeJlhXEeLZzCwEBgGtACumghecwHpC6A1MAZoDlwGblpK6gGfUiLwBWgS2aPEXhpjqCI1EriUBcIHwEDgmPFSSa7O+xJLyUpgVYLiFcAaszYd2Jti4HugW1bSuwKoDzwGOsconArsj/yvKAiYjkWUNpmj8dv8qaPSL8PDKsUb03hcAfQC7iQI2gwsiFmTcX3g77hy3fxKbPpPiZylfycwOwSA7sCDBEHykDzlQzJc57xBxqZgAKTnNDDKUigvDgBu+FhveC8CQzL2zQW2h4iAZLQH1IgGGYEfTHiPlGG8tqh8qmMrv+Lorck5Va5EyjqDcRtVx1sC9wLMNrOMh207zhrnvMpyTjkAsmT6risSKgKtgLvAceCcq5DaAMDV1li+AkC13Bdgc1oE2gDqniqdzwGNCBolKkHjgdWmCp00fUZV6T9KA3AImBjZodtUD+BJzgg0rjy0mtxhy5Z/JiQB0DzzNaZTzge25AxAFUmRj5Kc1wgozVGZAMTwBmhrCZoMKDJ50hRrOJSuF0An3yM0A9gNKBoiXTDUhYPdphK8oM58Behr1n8BM4E9vgDEryFuNPAMUDLlbXzJRoEYC3QBTgGPkkJe9IE8k8FFdhEBFy/lyVNOBPQyoS59P64ul2ms7OgJvAZ0mXcmXwDbgDlG+lNgXMpV09UIdfejQFfjkB2AbmJO5AMgrsGoxKncVYckQ6U6Ss4N0wfAOmCZpUgDlt2tfcG8M5eZ6L61wHIXQT4A5JUDltAT5hi56EriOWNe4aLrGiI1wGWSDwAJUw7onUb71B0npOTAcJMv+j6wCzifYI2dA1uBeZmWGwZfANqmC327jCqk7wD2vVaAkkBUrAq5OuYgMMli1vOjniGDUjkRcDHAvgxpT/CPGxKaF4ChMccl7Qi5OCWWJy8AUhZNYr1x6hUuOOUJILixcQILABVxc4qSIgI1HYE/5MGQMX+mp2UAAAAASUVORK5CYII=") no-repeat;
+  background-size: contain;
+  animation: rotate 1s linear infinite;
+}
+
+.loading.complete:before {
+  display: none;
+}
+
+.search-bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  background: #f4f4f4;
+}
+
+.search-wrap {
+  position: relative;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  padding: 0 20rpx;
+  background: #fff;
+  border-radius: 6rpx;
+}
+
+.search-wrap .icon-search {
+  margin-right: 10rpx;
+}
+
+.search-wrap .search-input {
+  flex: auto;
+  font-size: 28rpx;
+}
+
+.search-cancel {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+
+.top_icon {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 30px;
+  right: 20px;
+  border: 1px solid rgb(90, 88, 85);
+  border-radius: 20px;
+}

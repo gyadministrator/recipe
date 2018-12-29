@@ -1,0 +1,21 @@
+<view class="search-bar">
+  <view class="search-wrap">
+    <icon type="search" size="16" class="icon-search" />
+    <input type="text" placeholder="请输入搜索内容" class="search-input" name="searchKeyword" bindinput="bindKeywordInput" value="{{searchKeyword}}" />
+  </view>
+  <view class="search-cancel" bindtap="keywordSearch">搜索</view>
+</view>
+<scroll-view>
+  <view wx:for="{{list}}" wx:for-index="index" wx:for-item="recipe" wx:key="key">
+    <view class="item" bindtap='detail' data-id='{{recipe.menuId}}'>
+      <image src='{{recipe.thumbnail}}'></image>
+      <text>{{recipe.name}}</text>
+    </view>
+  </view>
+  <view class='empty' hidden='{{hidden}}'>暂无数据</view>
+  <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>
+  <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部</view>
+  <view bindtap='top'>
+    <image class="top_icon" src="../../images/top.png"></image>
+  </view>
+</scroll-view>

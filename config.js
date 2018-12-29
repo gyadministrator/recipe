@@ -1,0 +1,1 @@
+const SERVER_URL = "https://apicloud.mob.com/v1/";
